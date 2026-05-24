@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kshetriva Farms | Fresh From Farm to Your Home</title>
+    <meta name="description"
+        content="Direct farm-to-home delivery of fresh vegetables without middlemen. Better prices for families and better income for farmers.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css?v=1.5">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="images/logo_nav.webp" alt="Kshetriva Farms Logo" class="logo-img">
+                <span>Kshetriva Farms</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#products">Products</a>
+                <a href="#farmers">Our Farmers</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#reviews">Reviews</a>
+            </div>
+            <div class="nav-actions">
+                <div class="lang-toggle" id="langToggle" title="Switch Language / భాష మార్చండి">
+                    <span class="lang-option active" id="langOptEn">EN</span>
+                    <span class="lang-option" id="langOptTe">TE</span>
+                    <div class="lang-slider"></div>
+                </div>
+                <button class="cart-btn" id="cartBtn" title="View Cart">
+                    <i class="fa-solid fa-shopping-basket"></i>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobileBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <video autoplay loop muted playsinline class="hero-video">
+            <source src="videos/bg-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Fresh From Farm to Your Home</h1>
+            <p>No Middlemen. Fresh Vegetables. Better Prices for Families and Better Income for Farmers.</p>
+            <div class="hero-btns">
+                <a href="#products" class="btn btn-primary">Order Now</a>
+                <a href="#footer" class="btn btn-secondary">Contact Us</a>
+                <a href="https://wa.me/918374276995?text=Hello%20Kshetriva%20Farms,%20I%20want%20to%20place%20an%20order."
+                    target="_blank" class="btn btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container about-content">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=800"
+                    alt="Fresh Farm Produce">
+            </div>
+            <div class="about-text">
+                <h3 class="section-title" style="text-align: left;">About Kshetriva Farms</h3>
+                <p><strong>Direct Farm-to-Home Delivery:</strong> We bridge the gap between hardworking farmers and your
+                    kitchen table, cutting out the middlemen to ensure you get the freshest produce possible.</p>
+                <p><strong>Fresh & Chemical-Safe:</strong> Our vegetables are grown with care, ensuring they are safe,
+                    healthy, and full of natural nutrients for your family.</p>
+                <p><strong>Supporting Local Farmers:</strong> By buying directly through us, you are helping local
+                    farmers earn a fair and sustainable income for their hard work.</p>
+                <p><strong>Transparency in Sourcing:</strong> Know exactly where your food comes from. We believe in
+                    complete transparency from the soil to your plate.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">A simple, transparent journey from our farms to your home</p>
+
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-icon"><i class="fa-solid fa-tractor"></i></div>
+                    <h4>1. Farmer Harvests</h4>
+                    <p>Farmers pick fresh produce at peak ripeness.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                    <h4>2. Quality Check</h4>
+                    <p>Our experts ensure every item meets high standards.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon"><i class="fa-solid fa-box-open"></i></div>
+                    <h4>3. Fresh Packaging</h4>
+                    <p>Produce is carefully packed to retain freshness.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                    <h4>4. Home Delivery</h4>
+                    <p>Delivered straight to your door, fast and fresh.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title">Our Fresh Produce</h2>
+            <p class="section-subtitle">Handpicked selections delivered to you</p>
+
+            <div class="category-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="leafy">Leafy Vegetables</button>
+                <button class="filter-btn" data-filter="root">Root Vegetables</button>
+                <button class="filter-btn" data-filter="seasonal">Seasonal</button>
+                <button class="filter-btn" data-filter="organic">Organic</button>
+                <button class="filter-btn" data-filter="fruits">Fruits</button>
+            </div>
+
+            <div class="product-grid" id="productGrid">
+                <!-- Products injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet Our Farmers Section -->
+    <section class="farmers" id="farmers">
+        <div class="container">
+            <h2 class="section-title">Meet Our Farmers</h2>
+            <p class="section-subtitle">The proud hands that feed our community</p>
+
+            <div class="farmer-grid">
+                <div class="farmer-card">
+                    <img src="images/farmer_ramesh.webp" alt="Farmer Ramesh" class="farmer-img">
+                    <div class="farmer-info">
+                        <h4>Ramesh Kumar</h4>
+                        <p class="farmer-location"><i class="fa-solid fa-location-dot"></i> Mariyala, Telangana</p>
+                        <p class="farmer-story">Ramesh has been cultivating organic root vegetables for over 15 years.
+                            His dedication to sustainable farming ensures the best quality carrots and beets.</p>
+                    </div>
+                </div>
+                <div class="farmer-card">
+                    <img src="images/farmer_sunita.webp" alt="Farmer Sunita" class="farmer-img">
+                    <div class="farmer-info">
+                        <h4>Sunita Devi</h4>
+                        <p class="farmer-location"><i class="fa-solid fa-location-dot"></i> Mariyala, Telangana</p>
+                        <p class="farmer-story">A pioneer in leafy greens. Sunita uses natural compost to grow the
+                            freshest spinach and kale. Kshetriva helps her sell directly without relying on wholesale
+                            markets.</p>
+                    </div>
+                </div>
+                <div class="farmer-card">
+                    <img src="images/farmer_ashok.webp" alt="Farmer Ashok" class="farmer-img">
+                    <div class="farmer-info">
+                        <h4>Ashok Singh</h4>
+                        <p class="farmer-location"><i class="fa-solid fa-location-dot"></i> Mariyala, Telangana</p>
+                        <p class="farmer-story">Specializing in seasonal fruits, Ashok's farm is a local legend for
+                            sweet mangoes and guavas. He loves seeing photos of families enjoying his harvest.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Farm Gallery</h2>
+            <p class="section-subtitle">Glimpses of our daily farm life and deliveries</p>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/farm_field.webp" alt="Lush Farm Fields">
+                    <div class="gallery-overlay">
+                        <h4>Lush Fields</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/harvesting.webp" alt="Morning Harvest">
+                    <div class="gallery-overlay">
+                        <h4>Morning Harvest</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/quality_check.webp" alt="Quality Check">
+                    <div class="gallery-overlay">
+                        <h4>Quality Check</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/delivery_box.webp" alt="Ready for Delivery">
+                    <div class="gallery-overlay">
+                        <h4>Ready for Delivery</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <h2 class="section-title">Customer Reviews</h2>
+            <p class="section-subtitle" style="color: #ddd;">What families say about our farm-fresh produce</p>
+
+            <div class="review-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/customer_ganesh.webp" alt="Customer" class="review-img">
+                        <div class="review-header-name">
+                            <h4>Ganesh.P</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"The spinach and tomatoes were incredibly fresh! It feels so good knowing my money goes directly
+                        to the farmers. Highly recommended!"</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/customer_sanjay.webp" alt="Customer" class="review-img">
+                        <div class="review-header-name">
+                            <h4>Sanjay.T</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Ordering through WhatsApp is so easy. The delivery was prompt, and the quality of organic
+                        vegetables is unmatched in the local market."</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/customer_vamshi.webp" alt="Customer" class="review-img">
+                        <div class="review-header-name">
+                            <h4>Vamshi.A</h4>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"I loved reading the stories of the farmers on the website. The connection makes the food taste
+                        even better. Great initiative!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="logo" style="color: white; margin-bottom: 20px;">
+                        <img src="images/logo_nav.webp" alt="Kshetriva Farms Logo" class="logo-img footer-logo-img">
+                        <span>Kshetriva Farms</span>
+                    </a>
+                    <p style="color: #ccc;">From Farm to Home — Directly. Empowering farmers and bringing health to
+                        families.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#farmers">Our Farmers</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul style="color: #ccc;">
+                        <li style="margin-bottom: 10px;"><i class="fa-solid fa-phone"></i> +91 83742 76995</li>
+                        <li style="margin-bottom: 10px;"><i class="fa-solid fa-phone"></i> +91 90148 33202</li>
+                        <li style="margin-bottom: 10px;"><a href="mailto:farm@kshetrivafarms.com" id="emailContactBtn" style="margin-right: 8px;"><i class="fa-solid fa-envelope"></i></a> farm@kshetrivafarms.com</li>
+                        <li style="margin-bottom: 10px;"><a href="https://maps.app.goo.gl/3hkokYQueuyNkXwh9" target="_blank" style="margin-right: 8px;"><i class="fa-solid fa-location-dot"></i></a> H no. 5-134, Maryala, Bommalaramaram, Telangana - 508116, India</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <!-- <a href="#"><i class="fa-brands fa-facebook-f"></i></a> -->
+                        <a href="https://www.instagram.com/kshetrivafarms?igsh=dGV5d3I2d2Rhc2t2" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <!-- <a href="#"><i class="fa-brands fa-twitter"></i></a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kshetriva Farms. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Cart Button -->
+    <button class="cart-float" id="cartFloatBtn" title="View Basket">
+        <i class="fa-solid fa-shopping-basket"></i>
+        <span class="cart-badge-float" id="cartBadgeFloat">0</span>
+    </button>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/918374276995?text=Hello%20Kshetriva%20Farms,%20I%20want%20to%20place%20an%20order."
+        class="whatsapp-float" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Shopping Cart Drawer -->
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-drawer-header">
+            <h3><i class="fa-solid fa-shopping-basket"></i> Your Basket</h3>
+            <div class="cart-header-actions">
+                <button class="clear-cart-btn" id="clearCartBtn" onclick="clearCart()">Clear All</button>
+                <button class="close-cart-btn" id="closeCartBtn">&times;</button>
+            </div>
+        </div>
+        <div class="cart-drawer-items" id="cartDrawerItems">
+            <!-- Dynamically populated -->
+        </div>
+        <div class="cart-drawer-footer">
+            <div class="cart-total-row">
+                <span>Total:</span>
+                <span id="cartTotalSum">₹0</span>
+            </div>
+            <button class="btn btn-whatsapp-order" id="whatsappOrderBtn">
+                <i class="fa-brands fa-whatsapp"></i> Send Order on WhatsApp
+            </button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- Custom Confirmation Modal -->
+    <div class="confirm-modal" id="confirmModal">
+        <div class="confirm-modal-content">
+            <h3>Empty Your Basket?</h3>
+            <p>Are you sure you want to clear all products from your basket?</p>
+            <div class="confirm-modal-buttons">
+                <button class="btn btn-secondary" id="cancelConfirmBtn">Cancel</button>
+                <button class="btn btn-primary" id="acceptConfirmBtn" style="background-color: #d32f2f; border-color: #d32f2f; color: white;">Clear All</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast-notification" id="toastNotification">
+        <i class="fa-solid fa-check-circle"></i> Email copied to clipboard!
+    </div>
+
+    <!-- Custom Script -->
+    <script src="script.js?v=1.4"></script>
+</body>
+
+</html>
